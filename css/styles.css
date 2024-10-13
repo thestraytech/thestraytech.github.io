@@ -33,6 +33,12 @@ body {
   padding: 0;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 3rem 0;
+}
+
 h1,
 h2,
 h3,
@@ -48,19 +54,24 @@ section {
   margin-bottom: 5rem;
 }
 
+svg {
+  margin: 20px 10px;
+}
+
 article {
-  --pico-card-background-color: rgb(27, 21, 19);
+  --pico-card-background-color: var(--pico-background-color);
+  box-shadow: none;
   margin-top: 50px;
   padding: 100px 100px;
   transition: 0.1s ease-in-out;
 }
-article:hover {
-  --pico-card-background-color: rgb(20, 15, 13);
-  box-shadow: 0 20px 2rem rgba(8, 7, 7, 0.786);
-}
 
-svg {
-  margin: 20px 10px;
+.visible-article {
+  --pico-card-background-color: rgb(27, 21, 19);
+}
+.visible-article:hover {
+  --pico-card-background-color: rgb(20, 15, 13);
+  box-shadow: 0 20px 2rem rgba(8, 7, 7, 0.446);
 }
 
 .center {
