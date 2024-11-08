@@ -2,41 +2,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 
 :root {
-  --pico-color: #c0bfc0;
-  --pico-primary: rgb(203, 198, 182);
-  --pico-primary-border: var(--pico-primary);
-  --pico-border-radius: 2rem;
-  --pico-background-color: rgb(39, 33, 31);
-  --pico-blockquote-border-color: #7b7b7b;
-  --pico-blockquote-footer-color: var(--pico-blockquote-border-color);
-  --pico-text-underline-offset: 0.5rem;
-  --pico-spacing: 1.5rem;
-  --pico-typography-spacing-vertical: 1.5rem;
-  --pico-form-element-spacing-vertical: 1rem;
-  --pico-form-element-spacing-horizontal: 1.25rem;
-  --pico-box-shadow: 0 20px 2rem rgba(0, 0, 0, 0.331);
+    --pico-color: #c0bfc0;
+    --pico-primary: rgb(203, 198, 182);
+    --pico-primary-border: var(--pico-primary);
+    --pico-border-radius: 2rem;
+    --pico-background-color: rgb(39, 33, 31);
+    --pico-blockquote-border-color: #7b7b7b;
+    --pico-blockquote-footer-color: var(--pico-blockquote-border-color);
+    --pico-text-underline-offset: 0.5rem;
+    --pico-spacing: 1.5rem;
+    --pico-typography-spacing-vertical: 1.5rem;
+    --pico-form-element-spacing-vertical: 1rem;
+    --pico-form-element-spacing-horizontal: 1.25rem;
+    --pico-box-shadow: 0 20px 2rem rgba(0, 0, 0, 0.331);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Playwrite DE Grund", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+    font-family: "Playwrite DE Grund", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 3rem 0;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 3rem 0;
 }
 
 h1,
@@ -45,53 +45,57 @@ h3,
 h4,
 h5,
 h6 {
-  --pico-font-family: Borel, cursive;
-  --pico-font-weight: 400;
-  --pico-typography-spacing-vertical: 0.5rem;
+    --pico-font-family: Borel, cursive;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
 }
 
 section {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 svg {
-  margin: 20px 10px;
+    margin: 20px 10px;
 }
 
 article {
-  --pico-card-background-color: var(--pico-background-color);
-  box-shadow: none;
-  margin-top: 50px;
-  padding: 100px 100px;
-  transition: 0.1s ease-in-out;
+    --pico-card-background-color: var(--pico-background-color);
+    box-shadow: none;
+    margin-top: 50px;
+    padding: 100px 100px;
+    transition: 0.1s ease-in-out;
 }
 
 .visible-article {
-  --pico-card-background-color: rgb(27, 21, 19);
+    --pico-card-background-color: rgb(27, 21, 19);
 }
 .visible-article:hover {
-  --pico-card-background-color: rgb(20, 15, 13);
-  box-shadow: 0 20px 2rem rgba(8, 7, 7, 0.446);
+    --pico-card-background-color: rgb(20, 15, 13);
+    box-shadow: 0 20px 2rem rgba(8, 7, 7, 0.446);
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .faded {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .very-faded {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 .large-icon {
-  font-size: 2rem;
+    font-size: 2rem;
+}
+
+.footer {
+    position: fixed;
 }
 
 @media (min-width: 1025px) {
-  .container {
-    width: 1024px;
-  }
+    .container {
+        width: 1024px;
+    }
 }
