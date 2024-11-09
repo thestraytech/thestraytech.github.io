@@ -1,7 +1,10 @@
 {% extends "base.html" %} {% block content %}
 
 <center>
-    <h1><i class="fa-solid fa-mug-hot"></i> Latest <u>Blogs</u></h1>
+    <h1>
+        <i class="fa-solid fa-mug-hot"></i> Latest
+        <u class="pico-color-pumpkin-200">Blogs</u>
+    </h1>
     <hr />
 
     {% if paginator.pages|length == 0 %} no blogs! {%else%} {% for page in
@@ -14,10 +17,14 @@
         </div>
         <div class="blog-post-right">
             <i class="fa-solid fa-hourglass-half"></i> {{ page.date |
-            date(format="%b %d, %Y") }} <i class="fa-solid fa-user"></i> {{
-            page.authors[0] }}
+            date(format="%b %d, %Y") }} <i class="fa-solid fa-user"></i>
+            <a href="https://github.com/{{ page.authors[0] }}"
+                >{{ page.authors[0] }}</a
+            >
         </div>
     </div>
 
-    {% endfor %} {% endif %} {% endblock content %}
+    {% endfor %} {% endif %}
 </center>
+
+{% endblock content %}

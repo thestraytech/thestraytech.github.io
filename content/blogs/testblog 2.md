@@ -1,7 +1,7 @@
 +++
-title = "[test] How I made a Monzu interpreter"
+title = "[test] example blog "
 date = 2024-11-09
-description = "A deep-dive into this bizarre yet funny, compiled low-level programming language, especially by the organization's founder."
+description = "This is an example blog post."
 authors = ["furtidev"]
 [taxonomies]
 tags = ["test"]
