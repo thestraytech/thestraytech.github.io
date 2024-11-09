@@ -1,12 +1,22 @@
 {% extends "base.html" %} {% block content %}
 
 <center>
-    <h1>Latest Blogs</h1>
+    <h1><i class="fa-solid fa-mug-hot"></i> Latest <u>Blogs</u></h1>
+    <hr />
+
     {% if paginator.pages|length == 0 %} no blogs! {%else%} {% for page in
     paginator.pages %}
 
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a> on {{ page.date |
-    date(format="%b %d, %Y") }} <br />
-    <!-- {# COMMENT: find all attributes from https://www.getzola.org/documentation/content/page/ #} -->
+    <div class="blog-post">
+        <div class="blog-post-left pico-color-sand-500">
+            <a href="{{ page.permalink | safe }}"> {{ page.title }} </a>
+            <p>{{ page.description }}</p>
+        </div>
+        <div class="blog-post-right">
+            <i class="fa-solid fa-hourglass-half"></i> {{ page.date |
+            date(format="%b %d, %Y") }}
+        </div>
+    </div>
+
     {% endfor %} {% endif %} {% endblock content %}
 </center>

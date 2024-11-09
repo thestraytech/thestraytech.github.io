@@ -102,6 +102,37 @@ article {
     width: 100%;
 }
 
+/* Blog-specific styling */
+.blog-post {
+    padding: 2rem;
+    width: 60%;
+    text-align: left;
+}
+
+.blog-post-left {
+    display: inline-block;
+    font-size: 1.25rem;
+}
+.blog-post-left:hover {
+    color: #fff;
+}
+.blog-post-left p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.85rem;
+}
+
+.blog-post-right {
+    opacity: 0.5;
+    padding-top: 1rem;
+    float: right;
+    font-size: 0.85rem;
+}
+.blog-post-right i,
+.blog-post-left i {
+    margin-right: 5px;
+}
+
 /* Media queries */
 @media (min-width: 1025px) {
     .container {
