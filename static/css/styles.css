@@ -66,8 +66,8 @@ svg {
 article {
     --pico-card-background-color: var(--pico-background-color);
     box-shadow: none;
-    margin-top: 50px;
-    padding: 100px 100px;
+    margin-top: 30px;
+    padding: 100px 80px;
 }
 
 /* Utility classes */
@@ -102,10 +102,10 @@ article {
     width: 100%;
 }
 
-/* Blog-specific styling */
+/* Blog post-specific styling */
 .blog-post {
     padding: 2rem;
-    width: 60%;
+    width: 80%;
     text-align: left;
 }
 
@@ -124,13 +124,27 @@ article {
 
 .blog-post-right {
     opacity: 0.5;
-    padding-top: 1rem;
     float: right;
     font-size: 0.85rem;
 }
 .blog-post-right i,
 .blog-post-left i {
     margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Blog display-specific styling */
+.blog-display {
+    width: 80%;
+}
+
+.blog-display h2 {
+    font-family: "Playwrite DE Grund", sans-serif;
+    margin-top: 1rem;
+}
+
+.blog-display-content {
+    text-align: left;
 }
 
 /* Media queries */
