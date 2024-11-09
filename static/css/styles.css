@@ -124,7 +124,7 @@ article {
 
 .blog-post-right {
     opacity: 0.5;
-    float: right;
+    text-align: right;
     font-size: 0.85rem;
 }
 .blog-post-right i,
