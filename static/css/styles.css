@@ -93,6 +93,7 @@ article {
 .footer {
     position: absolute;
     height: 2.5rem;
+    padding-top: 2rem;
     bottom: 0;
     width: 100%;
 }
