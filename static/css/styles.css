@@ -150,6 +150,9 @@ article {
     padding-bottom: 0;
     box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.331);
 }
+.blog-display-title {
+    font-family: var(--pico-font-family);
+}
 .blog-display-footer {
     font-size: 0.8rem;
     opacity: 0.5;
