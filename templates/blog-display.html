@@ -1,7 +1,19 @@
 {% extends "base.html" %} {% block content %}
 <center>
     <div class="blog-display" }>
-        <h2 class="center">{{ page.title }}</h2>
+        <a class="blog-display-go-back" href="/blogs"><<< Go Back</a>
+        <div class="blog-display-title">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
+            <p class="blog-display-footer">
+                <i class="fa-solid fa-hourglass-half"></i>
+                Published: {{ page.date | date(format="%b %d, %Y") }} |
+                <i class="fa-solid fa-user"></i> Author:
+                <a href="https://github.com/{{ page.authors[0] }}"
+                    >{{ page.authors[0] }}</a
+                >
+            </p>
+        </div>
         <hr />
         <div class="blog-display-content pico-color-pumpkin-500">
             {{ page.content | safe }}

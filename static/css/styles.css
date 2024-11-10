@@ -136,11 +136,23 @@ article {
 /* Blog display-specific styling */
 .blog-display {
     width: 80%;
+    text-align: left;
+}
+.blog-display-go-back {
+    opacity: 0.5;
 }
 
-.blog-display h2 {
-    font-family: "Playwrite DE Grund", sans-serif;
+.blog-display-title {
+    text-align: center;
     margin-top: 1rem;
+    border: 1px solid var(--pico-primary);
+    padding: 2rem;
+    padding-bottom: 0;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.331);
+}
+.blog-display-footer {
+    font-size: 0.8rem;
+    opacity: 0.5;
 }
 
 .blog-display-content {
